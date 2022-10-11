@@ -7,11 +7,15 @@ pipeline {
 
       }
     }
-    stage('build'){
-        node{
-      checkout scm
-      sh 'mvn clean install'
-}
+     stage('Build from Git repository') {
+        steps{
+          echo "Build"
+      }
+    }
+    stage('Tesing '){
+        steps{
+          echo "Testing"
+      }
     }
 
   }
