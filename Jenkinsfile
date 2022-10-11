@@ -12,9 +12,19 @@ pipeline {
           echo "Build"
       }
     }
-    stage('Testing '){
+    stage('Deploy '){
         steps{
-          echo "Testing"
+          echo "Deploy"
+      }
+    }
+    stage('Test '){
+        steps{
+          echo "Test"
+      }
+    }
+    stage('Release '){
+        steps{
+          echo "Release"
       }
     }
 
