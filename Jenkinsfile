@@ -22,6 +22,16 @@ pipeline {
           echo "Test"
       }
     }
+    stage('Test funcation A'){
+        steps{
+          echo "Test A"
+      }
+    }
+    stage('Test funcation B'){
+        steps{
+          echo "Test B"
+      }
+    }
     stage('Release '){
         steps{
           echo "Release"
