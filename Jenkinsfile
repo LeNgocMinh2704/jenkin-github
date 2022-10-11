@@ -4,11 +4,12 @@ pipeline {
     stage('Clone') {
       steps {
         git 'https://github.com/LeNgocMinh2704/jenkin-github.git'
+        catchError(message: 'Errors') {
+    // some block
+    }
 
       }
     }
-    catchError(message: 'Errors') {
-    // some block
-    }
+
   }
 }
