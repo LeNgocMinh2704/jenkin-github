@@ -22,9 +22,9 @@ pipeline {
           echo "Test"
       }
     }
-    stage('Test funcation A'){
+    stage('Test UI'){
         steps{
-          echo "Test A"
+          echo "Test UI"
       }
     }
     stage('Test funcation B'){
